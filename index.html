@@ -1,50 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio Raylan</title>
 
-    <style>
-        th {
-            color: rgb(73, 28, 189);
-            font-size: 50px;
-        }
-        body {
-            margin: 0;
-            height: 100vh;    
-            display: flex;
-            flex-direction: column;  
-            justify-content: right;
-            align-items: right;    
-            background-color: rgb(156, 97, 55);
-            color: #333; 
-            font-family: Arial, sans-serif;
-        }
-        a, li {
-            font-size: 25px;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        img {
-            width: 200px; 
-            height: auto;
-            margin-top: 20px;
-        }
-    </style>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Imagens fixas no topo cantos, maiores e mais abaixo */
+  .corner-img {
+    position: fixed;
+    top: 80px;           /* desce as imagens */
+    width: 250px;        /* aumenta o tamanho */
+    opacity: 0.85;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .left-img {
+    left: 10px;
+  }
+
+  .right-img {
+    right: 10px;
+  }
+
+  /* TOPO */
+  header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #C8102E;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    margin: 10px 0;
+  }
+
+  /* CONTEÚDO CENTRALIZADO */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* LISTA */
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  li {
+    margin: 20px 0;
+  }
+
+  /* CAIXAS GRANDES */
+  a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  }
+
+  /* EFEITO */
+  a:hover {
+    background-color: #C8102E;
+    color: #fff;
+    transform: scale(1.05);
+  }
+</style>
 </head>
-<body>
-    
-    <table border="1">
-        <tr>
-            <th>Portfólio do Raylan!</th>
-        </tr>
-    </table>
 
+<body>
+
+  <!-- Imagens fixas nos cantos superiores, maiores e mais abaixo -->
+  <img src="https://www.enfoquems.com.br/wp-content/uploads/2020/09/corinthians_p000Pmj_widexl.jpeg" class="corner-img left-img" alt="Corinthians logo esquerda" />
+  <img src="https://www.enfoquems.com.br/wp-content/uploads/2020/09/corinthians_p000Pmj_widexl.jpeg" class="corner-img right-img" alt="Corinthians logo direita" />
+
+  <header>
+    <h1>Portfólio do Raylan 🖤🤍</h1>
+  </header>
+
+  <div class="container">
     <ul>
-        <li><a href="informacao.html">Informações pessoais</a></li><br>
-        <li><a href="informacao1.html">Informações acadêmicas</a></li>
+      <li><a href="informacao.html">Informações pessoais</a></li>
+      <li><a href="informacao1.html">Informações acadêmicas</a></li>
+      <li><a href="harry.html">Projetos</a></li>
     </ul>
+  </div>
 
 </body>
 </html>
