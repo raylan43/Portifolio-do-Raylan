@@ -1,80 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-         th {
-            color: rgb(0, 0, 0);
-            font-size: 50px;
-        }
-        td {
-            color: red;
-            font-size: 25px;
-        }
-        tr {
-            border: none;
-            padding: 10px;
-        }
-        body {
-            margin: 0;
-            height: 100vh;        
-            display: flex;
-            flex-direction: column;  
-            justify-content: right; 
-            align-items: r;      
-            background-color: rgb(104, 165, 205); 
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
-        a {
-            font-size: 25px;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        li {
-            color: rgb(130, 89, 184);
-            font-size: 25px;
-        }
-    </style>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
 
+header {
+    background-color: #111;
+    padding: 15px;
+    border-bottom: 3px solid #C8102E;
+}
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+a:hover {
+    background: #C8102E;
+    color: #fff;
+}
+</style>
 </head>
+
 <body>
 
-    <table border="1">
-        <tr>
-            <th>Profissão:</th>
-            <td>
-                <ul>
-                    <li>Estudante</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>Área de Atuação:</th>
-            <td>
-                <ul>
-                    <li>Tecnico em desenvolvimento de sistema</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>Habilidades:</th>
-            <td>          
-                <ul>
-                        <li>Desenvolvimento de portfólio e web simples</li>
-                        <li>Programação em PHP basico</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-        <ul>
-            <li><a href="https://github.com/raylan43">GitHub</a></li>
-            <li><a href="https://github.com/raylan43/html-Harry-Potter-">Harry Potter</a></li>
-            <li><a href="index.html">voltar</a></li>
-        </ul>
+<header>
+    <h1>Informações Acadêmicas</h1>
+</header>
+
+<table>
+<tr><th>Profissão</th><td>Estudante</td></tr>
+<tr><th>Área</th><td>Técnico em desenvolvimento de sistemas</td></tr>
+<tr>
+    <th>Habilidades</th>
+    <td>
+        Desenvolvimento web básico<br>
+        PHP básico
+    </td>
+</tr>
+</table>
+
+<br>
+
+<a href="#">GitHub</a>
+<br><br>
+<a href="index.html">Voltar</a>
 
 </body>
 </html>
