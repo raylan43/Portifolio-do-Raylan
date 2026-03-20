@@ -1,79 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        th {
-            color: rgb(73, 28, 189);
-            font-size: 50px;
-        }
-        td {
-            color: red;
-            font-size: 25px;
-        }
-        body {
-            margin: 0;
-            height: 100vh;     
-            display: flex;
-            flex-direction: column; 
-            justify-content: right;  
-            align-items: center;     
-            background-color: rgb(104, 158, 205);
-            color: #333; 
-            font-family: Arial, sans-serif;
-        }
-        tr {
-            border: none;
-            padding: 10px;
-        }
-        a {
-            font-size: 25px;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-        }
-        li {
-            color: rgb(187, 77, 134);
-            font-size: 25px;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
 
-    </style>    
+header {
+    background-color: #111;
+    padding: 15px;
+    border-bottom: 3px solid #C8102E;
+}
 
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+a:hover {
+    background: #C8102E;
+    color: #fff;
+}
+</style>
 </head>
-<body>
-    
-    <table border="1">
-        <tr>
-            <th>Nome:</th>
-            <td>
-                <ul>
-                    <li>Raylan</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>Idade:</th>
-            <td>
-                <ul>
-                    <li>15</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th>Gmail:</th>
-            <td>
-                <ul>
-                    <li>raylanfelipecordeiro@gmail.com</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
 
-    <ul>
-        <li><a href="index.html">Voltar</a></li>
-    </ul>
+<body>
+
+<header>
+    <h1>Informações Pessoais</h1>
+</header>
+
+<table>
+<tr><th>Nome</th><td>Raylan</td></tr>
+<tr><th>Idade</th><td>15</td></tr>
+<tr><th>Email</th><td>raylanfelipecordeiro@gmail.com</td></tr>
+</table>
+
+<a href="index.html">Voltar</a>
 
 </body>
 </html>
